@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5892E5F4-F2C7-4BFC-9D87-EF83CDBCB72F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EF4FC30B-0694-4B10-A77B-EC52AC06559F}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+		NuGet.Config = NuGet.Config
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AppveyorAspNet5Build", "src\AppveyorAspNet5Build\AppveyorAspNet5Build.xproj", "{300D5BC8-B58F-45F7-9B3A-BA88D3983B8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{300D5BC8-B58F-45F7-9B3A-BA88D3983B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{300D5BC8-B58F-45F7-9B3A-BA88D3983B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{300D5BC8-B58F-45F7-9B3A-BA88D3983B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{300D5BC8-B58F-45F7-9B3A-BA88D3983B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{300D5BC8-B58F-45F7-9B3A-BA88D3983B8E} = {5892E5F4-F2C7-4BFC-9D87-EF83CDBCB72F}
+	EndGlobalSection
+EndGlobal
