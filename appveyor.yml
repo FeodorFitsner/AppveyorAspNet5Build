@@ -6,7 +6,7 @@ install:
 - cmd: echo %WEBPROJ_ENABLEBETA7RENAMES%
 - cmd: set PATH=C:\Program Files (x86)\MSBuild\14.0\Bin;%PATH%
 - cmd: dnvm update-self
-- cmd: dnvm install 1.0.0-beta6
+- cmd: dnvm install 1.0.0-beta7
 - cmd: dnu restore --quiet --parallel
 build:
   project: AppveyorAspNet5Build.sln
@@ -14,7 +14,7 @@ build:
 artifacts:
   - path: '**\*.nupkg'
 environment:
-  DNX_BUILD_VERSION: beta6-%APPVEYOR_BUILD_NUMBER%
+  DNX_BUILD_VERSION: beta7-%APPVEYOR_BUILD_NUMBER%
 #init:
 #- ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 #on_finish:
