@@ -2,7 +2,7 @@ version: 1.0.{build}
 shallow_clone: true
 install:
 - ps: "&{$Branch='dev';iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.ps1'))}"
-- set PATH=C:\Program Files (x86)\MSBuild\14.0\Bin;%PATH%
+- set PATH=C:\Program Files (x86)\MSBuild\14.0\Bin;%USERPROFILE%\.dnx\bin;%PATH%
 - dnvm install 1.0.0-beta6
 - dnu restore --quiet --parallel
 build:
